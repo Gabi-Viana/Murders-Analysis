@@ -639,16 +639,16 @@ estlização da página de controle do detetive */
 
 .lista-aparecer{
     width: 100%;
-    height: 1000px;
+    height: 80px;
     display: flex;
     flex-direction: column;
     align-items:self-start; 
     text-align:center;
-    margin-top: 5%;
+    margin-top: 4%;
     color: #EEEE;
     background-image: url(./detetiveee.svg);
-    gap: 1rem;
-    padding: 20px 100px;
+    gap: 0.3rem;
+    padding: 0px 100px;
 }
 
 strong{
