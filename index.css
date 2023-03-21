@@ -1,0 +1,1242 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* estilização de scroll para firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #7CFC00;
+}
+
+/* estilização de scroll para chrome, edge e safari */
+*::-webkit-scrollbar {
+    width: 4px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #201e1e;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #7CFC00;
+    border-radius: 15px;
+    border: 1px solid #7CFC00;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 2150px;
+    background-color: #131313;
+    overflow-x: hidden;
+
+}
+
+header {
+    background-color: #131313;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.logo {
+    width: 4vw;
+    padding: 14px 40px;
+}
+
+.icon-menu, .icon-fechar{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.menu{
+    width: 4vw;
+    display: none;
+}
+
+
+.menu-description{
+      display: none;
+}
+
+.nav-itens a {
+    text-decoration: none;
+    color: #EEEE;
+    font-size: 1vw;
+}
+
+.nav-itens a:hover{
+    color: #7CFC00;
+}
+
+
+.nav-itens {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    padding: 0 40px;
+    gap: 4rem;
+    z-index: 11;
+}
+
+.lista {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 4rem;
+}
+
+#botao {
+    border-radius: 10px;
+    border: solid #7CFC00 2px;
+    background-color: #131313;
+    color: #EEEE;
+    height: 5vh;
+    width: 10vw;
+    cursor: pointer;
+    font-size: 1vw;
+}
+
+#inicio {
+    width: 100%;
+    height: 685px;
+    background-color: #131313;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.principal-information{
+    width: 70%;
+    height: 500px;
+    background-color: transparent;
+    padding: 90px 40px;
+    margin-top: 5%;
+
+}
+
+h1 {
+    color: #7CFC00;
+    font-size: 3vw;
+    border-right: 2px solid #EEEE;
+    width: 20ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3.6s steps(24), piscando 0.5s infinite step-end alternate;
+
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes piscando {
+    50% {
+        border-color: transparent;
+    }
+}
+
+p {
+    color: #EEEE;
+    font-size: 1.5vw;
+    padding: 20px 0;
+    text-align: justify;
+}
+
+.analysis-form, .login-form{
+    width: 20vw;
+    height: 40vh;
+    padding: 20px 0;
+}
+
+.lupa-image{
+    width: 30%;
+    height: 620px;
+    background-color: transparent;
+    padding: 30px 40px;
+    margin-top: 5%;
+}
+
+#lupa {
+    width: 30vw;
+    padding-top: 19%;
+}
+
+#text {
+    width: 30vw;
+    height: 6vh;
+    border: solid black 2px;
+    border-radius: 12px;
+    padding: 0 10px;
+
+}
+
+#cpf {
+    width: 30vw;
+    height: 6vh;
+    border: solid black 2px;
+    border-radius: 12px;
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+#button {
+    width: 10vw;
+    height: 6vh;
+    border-radius: 15px;
+    background-color: #7ece2e;
+    color: #EEEE;
+    font-size: 1.4vw;
+    font-weight: 500;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    background-color: #131313;
+    color: #EEEE;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+span {
+    color: #7CFC00;
+}
+
+
+/* estilização do conteúdo sobre */
+
+#about {
+    width: 100%;
+    height: 690px;
+    width: 100%;
+    height: 690px;
+    background-color:#191919;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15%;
+}
+
+#digital-scaner{
+    width: 40%;
+    height: 690px;
+    padding: 0 40px;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    z-index: 2;
+}
+
+
+
+.container {
+    width: 300px;
+    height: 250px;
+    background-color:#191919;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+#scaner {
+    border-top: 2px solid #7CFC00;
+    animation: scaneador 15s linear infinite;
+    display: flex;
+    width: 300px;
+    background-color: #191919;
+    position: absolute;
+    height: 200px;
+
+
+}
+
+#digital {
+    width: auto;
+    height: 80%;
+
+}
+
+@keyframes scaneador {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(100%);
+    }
+
+    50% {
+        transform: translateY(0);
+
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+#about-information {
+    z-index: 3;
+    width: 60%;
+    height: 690px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    padding: 0 40px;
+}
+
+
+
+/* estilição do conteúdo dúvidas frequentes */
+
+#faq {
+    width: 100%;
+    height: 690px;
+    background-color: #131313;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 0;
+
+}
+
+.faq-title {
+    color: #7CFC00;
+    font-size: 2vw;
+    text-align: center;
+}
+
+#faq-description {
+    text-align: justify;
+    width: 50%;
+    height: 500px;
+    padding-top: 90px;
+}
+
+#faq-description details summary {
+    padding: 15px 20px;
+    color: #EEEE;
+    font-size: 1.4vw;
+    border-bottom: 2px solid #7CFC00;
+}
+
+
+.answers {
+    color: #A7A6A6;
+    font-size: 1vw;
+    padding: 15px 40px;
+}
+
+
+.login-form{
+    z-index: 9;
+}
+
+
+
+
+/* login detetive page*/
+.body2 {
+    width: 100%;
+    height: 100vh;
+}
+
+@keyframes aparecerLinha {
+    50% {
+        filter: opacity(0);
+    }
+
+    100% {
+        filter: opacity(1);
+
+
+    }
+}
+
+
+
+.detetive-login{
+    position: absolute;
+    width: 100%;
+    height:700px;
+    padding: 0 40px;
+    top: 165px;
+    z-index: 9;
+   
+}
+
+.linhas{
+    z-index: 2;
+ 
+       position: absolute;
+       display:flex;
+       flex-direction: column;
+       left: 0;
+       top: 100px;
+       width: 100%;
+       height: 40vh;
+}
+
+.linhas span{
+    width: 800px;
+    height: 2px;
+    background-color: #7CFC00;
+    margin: 2px 10px;
+}
+
+.line_coluna1{
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    padding: 30px 60px;
+}
+
+.line_coluna2{
+    display: flex;
+    flex-direction: row;
+    padding: 60px 0;
+}
+
+.line_coluna3{
+    display: flex;
+    flex-direction: row;
+    padding: 100px 0;
+}
+
+.line_coluna4{
+    display: flex;
+    flex-direction: row;
+
+}
+
+#linha1{
+    /* margin-top: 2%; */
+    animation: aparecerLinha 2s linear infinite;
+}
+
+#linha2{
+
+    margin-top: 5%;
+    animation: aparecerLinha 3s linear infinite;
+}
+
+#linha3{
+    margin-top: 5%;
+    animation: aparecerLinha 4s linear infinite;
+}
+
+#linha4{
+    margin-top: 2%;
+    animation: aparecerLinha 15s linear infinite;
+}
+
+#linha5{
+    margin-top: 4%;
+    animation: aparecerLinha 9s linear infinite;
+}
+
+#linhs6{
+    margin-top: 5%;
+    animation: aparecerLinha 10s linear infinite;
+}
+
+#linha7{
+    margin-top: 6%;
+    animation: aparecerLinha 3s linear infinite;
+}
+
+#linha8{
+    margin-top: 8%;
+    animation: aparecerLinha 5s linear infinite;
+}
+
+#linha9{
+    animation: aparecerLinha 2s linear infinite;
+}
+
+#linha10{
+    margin-top: 4%;
+    animation: aparecerLinha 7s linear infinite;
+}
+
+.login-form{
+    position: relative;
+    background-color: transparent;
+}
+
+#ver-senha{
+    width: 35vw;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+div i{
+    font-size: 20px;
+    cursor:pointer;
+    color: #a9a6a6;
+    padding: 35px 8px;
+    position: absolute;
+    right: 12%;
+}
+
+div i:hover{
+    color: #7CFC00;
+}
+
+
+
+#detetive-name {
+    width: 30vw;
+    height: 6vh;
+    border: solid black 2px;
+    border-radius: 12px;
+    padding: 0 10px;
+}
+
+#senha {
+    width: 30vw;
+    height: 6vh;
+    border: solid black 2px;
+    border-radius: 12px;
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 
+estlização da página de controle do detetive */
+
+.body3{
+    width: 100%;
+    height: 1100px;
+}
+
+
+.painel{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+    font-size: 1.5vw;
+    padding: 80px 20px;
+}
+
+.botoes-nav{
+    display: flex;
+    flex-direction:column;
+    padding: 70px 40px;
+}
+
+.botao-mudanca{
+    width: 8vw;
+    height: 5vh;
+    font-weight:500;
+    margin-top: 6%;
+    border-radius: 5px;
+    border:  0.8px;
+    color: #000;
+    background-color:#A7A6A6;
+    cursor: pointer;
+}
+
+
+.mensagem-detetive {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 10px;
+    font-size: 1.5vw;
+    padding: 80px 40px;
+    color: #EEEE;
+    white-space: nowrap;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+.mensagem-detetive>h3 {
+    font-size: 1.9vw;
+    padding: 2px 0;
+}
+
+.central-controle{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0;
+}
+
+.detetive-controle {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.botoes {
+    width: 100%;
+    height: 50px;
+    padding: 60px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botao-controles {
+    width: 17vw;
+    height: 6vh;
+    border-radius: 10px;
+    border: solid #7CFC00 2px;
+    color: #EEEE;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.lista-aparecer{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items:self-start; 
+    text-align:center;
+    margin-top: 5%;
+    color: #EEEE;
+    background-image: url(./detetiveee.svg);
+    gap: 1rem;
+    padding: 20px 100px;
+}
+
+strong{
+    text-align: center;
+    color: #7CFC05;
+}
+
+.botao_js{
+    display: flex;
+    justify-content: center;
+    padding: 6px 0;
+}
+
+.adicionarNome{
+    width:30vw;
+    height:6vh;
+    border: solid black 2px;
+    border-radius: 12px;
+    padding: 0 10px;
+}
+
+.adicionarCpf{
+    width:30vw;
+    height:6vh;
+    border: solid black 2px;
+    border-radius: 12px;
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+.botao_controles2{
+    width: 17vw;
+    height: 6vh;
+    border-radius: 10px;
+    border: solid #7CFC00 2px;
+    color: #EEEE;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 1.5%;
+}
+
+
+
+
+
+/* estilização para celular */
+
+@media (max-width: 600px){
+header{
+        position: absolute;
+ }
+
+.lista{
+    display: none;
+}
+
+#botao{
+    display: none;
+}
+
+.logo{
+    width: 20vw;
+}
+
+.menu{
+        display: block;
+        width: 15vw;
+        padding: 0rem 0.5rem;
+        z-index: 15;
+    }
+    
+    .menu-description{
+    z-index: 13;
+    width: 10rem;
+    height: 65vh;
+    margin: 2px 15px;
+    display: block;
+    background-color: #191919;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%), 0 0 1px 0 rgb(0 0 0 / 8%);
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    right: -10px;
+    top: 0px;
+    z-index: 7;
+    padding: 0 2rem;
+}
+
+.menu-itens{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    list-style: none;
+    padding:20px 10px;
+    z-index: 14;
+   
+}
+
+#menu-botao{
+    width: 20vw;
+    height: 6vh;
+    border-radius: 10px;
+    border: solid #7CFC00 2px;
+    color: #EEEE;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 25%;
+}
+
+
+.interaction{
+  display:flex;
+  flex-direction:row;
+  justify-content:end;
+  padding: 25px 0;
+  width: 100%;
+  height:5vh;
+}
+
+.menu-fechar{
+  width: 4vw;;
+}
+
+.menu-lista>li>a{
+    text-decoration: none;
+    color: #EEEEEE;
+    font-size: 3vw;
+}
+
+.menu-lista>li>a:hover{
+    color:#7CFC00;
+}
+
+.menu-lista>li{
+    list-style: none;
+    margin-top: 20%;
+}
+
+.itens-menu{
+    display: none;
+    z-index: 15;
+}
+
+
+p{
+    font-size:4.5vw;
+    text-align: left;
+    display: flex;
+    padding: 0 50px;
+    margin-top: 5%;
+}
+
+.br-mobile{
+    display: none;
+}
+
+#lupa{
+    display: none;
+    /* padding: 0 5px; */
+}
+
+.principal-information{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+    padding: 120px 0;
+    
+}
+
+h1{
+    font-size:5vw;
+    animation: none;
+    border: none;
+    padding: 0 50px;
+}
+
+.analysis-form, .login-form{
+    padding: 15px 50px;
+}
+
+#text{
+    width: 30vw;
+    height: 4vh;
+    font-size: 2.5vw;
+    border-radius: 9px;
+    margin-top: 20%;
+}
+
+#cpf{
+    width: 30vw;
+    height: 4vh;
+    font-size: 2.5vw;
+    border-radius: 9px;
+    margin-top: 10%;
+}
+
+#button{
+    width: 20vw;
+    height: 5vh;
+    font-size: 3vw;
+    margin-top: 10%;
+}
+
+footer{
+   height: 10vh;
+    font-size:2vw;
+}
+
+#digital-scaner{
+    width: 25%;
+
+}
+
+.container {
+    width: 100px;
+    height: 150px;
+}
+
+#scaner{
+    width: 115px;
+    height: 150px;
+}
+
+#about-information{
+    width: 75%;
+    padding: 0 0.5px;
+}
+
+.faq_title{
+    font-size: 3.5vw;
+}
+
+#faq-description {
+   width: 75%;
+}
+
+#faq-description details summary{
+   font-size: 3vw;
+}
+ 
+.answers{
+    font-size:2.5vw;
+}
+
+.detetive-login{
+    padding: 200px 0;
+}
+
+div.detetive-controle{
+    display: flex;
+    flex-direction: column;
+}
+
+section.central-controle{
+    display: flex;
+    flex-direction: row;
+}
+form.botoes{
+    display: flex;
+    flex-direction: column;
+    height: 110vh;
+    width: 30vw;
+    padding: 20px 10px;
+    position: relative;
+    top: 250px;
+}
+div.lista_aparecer{
+    margin-left: 40%;
+    padding: 0;
+    width: 50%;
+    text-align: left;
+    gap: 0.5rem;
+    font-size: 3vw;
+}
+input#listar{
+    width: 30vw;
+    height: 7vh;
+    font-size: 1.8vw;
+    margin-bottom: 10%;
+}
+input#mudar{
+    width: 30vw;
+    margin-bottom: 10%;
+    font-size: 1.8vw;
+}
+input#deletar{
+    width: 30vw;
+    margin-bottom: 10%;
+    font-size: 1.8vw;
+}
+input#adiconar{
+    width: 30vw;
+    margin-bottom: 10%;
+}
+input#validar{
+    width: 30vw;
+    font-size: 1.7vw;
+}
+h3#ola{
+    font-size: 4vw;
+}
+div.logo{
+    padding: 10px;
+    width: 8vw;
+}
+.botao-mudanca{
+    width: 14vw;
+}
+/* Estilização dos botões */
+    input.adicionarNome{
+        width: 50vw;
+        /* position: relative;
+        top: 40%; */
+    }
+    input.adicionarCpf{
+        width: 50vw;
+        /* position: relative;
+        top: 30%; */
+    }
+    input#adicionarAssassino2{
+        width: 30vw;
+        position: relative;
+        top: 30%;
+        left: 23%;
+    }
+    input#changeInformations2{
+        position: relative;
+        left: 35%;
+    }
+}
+
+@media  (max-width: 820px){
+header{
+        position: absolute;
+    }
+
+.logo{
+    width: 3.5rem;
+}
+
+.lista{
+    display: none;
+}
+
+#botao{
+    display: none;
+}
+
+.menu{
+    display: block;
+    width: 6rem;
+    padding: 0rem 0.5rem;
+    z-index: 15;
+}
+
+.menu-description{
+    width: 10rem;
+    height: 65vh;
+    margin: 2px 15px;
+    display: block;
+    background-color: #191919;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%), 0 0 1px 0 rgb(0 0 0 / 8%);
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    right: -10px;
+    top: 0px;
+    z-index: 14;
+    padding: 0 2rem;
+}
+
+.menu-itens{
+    z-index: 16;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    list-style: none;
+    padding:20px 10px;
+   
+}
+
+#menu-botao{
+    width: 20vw;
+    height: 6vh;
+    border-radius: 10px;
+    border: solid #7CFC00 2px;
+    color: #EEEE;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 30%;
+}
+
+
+.interaction{
+  display:flex;
+  flex-direction:row;
+  justify-content:end;
+  padding: 25px 0;
+  width: 100%;
+  height:5vh;
+}
+
+.menu-fechar{
+  width: 2.5vw;;
+}
+
+.menu-lista>li>a{
+    text-decoration: none;
+    color: #EEEEEE;
+    font-size: 2vw;
+}
+
+.menu-lista>li>a:hover{
+    color:#7CFC00;
+}
+
+.menu-lista>li{
+    list-style: none;
+    margin-top: 25%;
+}
+
+.itens-menu{
+    display: none;
+}
+
+
+p{
+    font-size:2.5vw;
+    text-align: left;
+    display: flex;
+    margin-top: 5%;
+}
+
+.br-mobile{
+    display: none;
+}
+
+#lupa{
+    padding: 140px 0;
+}
+
+.principal-information{
+    padding: 160px 40px;
+}
+
+h1{
+    font-size: 3.2vw; 
+}
+
+#button{
+    width: 15vw;
+    font-size: 2vw;
+}
+
+footer{
+    font-size:2vw;
+}
+
+#digital-scaner{
+    width: 25%;
+
+}
+
+.container {
+    width: 100px;
+    height: 170px;
+}
+
+#scaner{
+    width: 120px;
+    height: 170px;
+}
+
+#faq-description {
+    width: 60%;
+}
+
+.faq-title{
+    width: 3.5vw;
+}
+
+#faq-description details summary{
+    font-size: 2.3vw;
+  
+}
+
+.answers{
+    font-size:2vw;
+}
+
+.detetive-login{
+    padding: 205px 40px;
+}
+
+strong{
+    height: 35px;
+}
+div.detetive-controle{
+    display: flex;
+    flex-direction: column;
+}
+
+section.central-controle{
+    display: flex;
+    flex-direction: row;
+}
+form.botoes{
+    display: flex;
+    flex-direction: column;
+    height: 110vh;
+    width: 30vw;
+    padding: 20px 10px;
+    position: relative;
+    top: 250px;
+}
+div.lista_aparecer{
+    margin-top: 0;
+    margin-left: 40%;
+    /* padding: 40px 0; */
+    width: 50%;
+    text-align: left;
+    gap: 0.5rem;
+    font-size: 3vw;
+}
+input#listar{
+    width: 30vw;
+    height: 7vh;
+    font-size: 1.8vw;
+    margin-bottom: 10%;
+}
+input#mudar{
+    width: 30vw;
+    margin-bottom: 10%;
+    font-size: 1.8vw;
+}
+input#deletar{
+    width: 30vw;
+    margin-bottom: 10%;
+    font-size: 1.8vw;
+}
+input#adiconar{
+    width: 30vw;
+    margin-bottom: 10%;
+}
+input#validar{
+    width: 30vw;
+    font-size: 1.7vw;
+}
+h3#ola{
+    font-size: 4vw;
+}
+div.logo{
+    padding: 10px;
+    width: 8vw;
+}
+.botao-mudanca{
+    width: 14vw;
+}
+/* Estilização dos botões */
+    input.adicionarNome{
+        width: 50vw;
+        /* position: relative;
+        top: 40%; */
+    }
+    input.adicionarCpf{
+        width: 50vw;
+        /* position: relative;
+        top: 30%; */
+    }
+    input#adicionarAssassino2{
+        width: 30vw;
+        position: relative;
+        top: 30%;
+        left: 23%;
+    }
+    input#changeInformations2{
+        position: relative;
+        left: 35%;
+    }
+
+
+}
+
+
+main {
+    position: relative;
+}
+

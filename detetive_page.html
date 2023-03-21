@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Murders Analysis</title>
+    <link class="icon" rel="icon" href="logo.1.svg">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body class="body2">
+    <header>
+        <div class="logo">
+            <a href="./index.html"><img src="logo.svg" alt="logo"></a>
+        </div>
+        <div class="nav-itens">
+            <ul class="lista">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./index.html#about">Sobre</a></li>
+                <li><a href="./index.html#faq">Dúvidas Frequentes</a></li>
+            </ul>
+            <a href="./detetive_page.html"><input type="button" value="Detetive" id="botao"> </a>
+            <button class="icon-menu" ><img class="menu" src="menu.svg" alt="Menu"></button>
+        </div>
+    </header>
+
+    <main>
+        <menu id="itens-menu">
+            <div class="menu-description">
+               <div class="interaction">
+               <button class="icon-fechar" onclick="fecharMenu()"><img class="menu-fechar" src="x.svg" alt="fechar menu"></button>
+            </div>
+            <ul class="menu-lista">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./index.html#about">Sobre</a></li>
+                <li><a href="./index.html#faq">Dúvidas Frequentes</a></li>
+            </ul>
+            <a href="./detetive_page.html"><input type="button" value="Detetive" id="menu-botao"> </a>
+        </div>
+        </menu>
+
+
+        <section class="detetive-login">
+            <h1>
+               Olá caro detetive...
+            </h1>
+            <p>
+                Detetive, é hora de encontrar novas aventuras. <br>Entre na central de informações para controlar as
+                <br>informações dos criminosos mais perigosos do mundo.
+            </p>
+
+            <div class="login-form">
+                <form>
+                    <input id="detetive-name" type="text" placeholder="Nome"><br>
+                    <div id="ver-senha">
+                    <input id="senha" type="password" placeholder="Senha" >
+                        <i class="bi bi-eye-fill" id="eye" onclick="mostarSenha()"></i><br>
+                    </div>
+                    <input id="button" type="button" value="Enviar" onclick="teste()">
+                </form>
+            </div>
+            <div class="linhas">
+                <div class="line_coluna1">
+                    <span id="linha1"></span>
+    
+                </div>
+                <div class="line_coluna2">
+                    <span id="linha4"></span>
+  
+                    <span id="linha6"></span>
+                </div>
+
+                <div class="line_coluna3">
+                    <span id="linha7"></span>
+                    <span id="linha8"></span>
+                    <span id="linha9"></span>
+                </div>
+
+                <div class="line_coluna4">
+                    <span id="linha10"></span>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <footer>
+        <div id="footer_conteudo">
+         &copy; 2023 <span> Murder analysis</span>. Todos os direitos reservados.
+        </div>
+        </footer>
+    </main>
+    
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murders Analysis</title>
+    <link class="icon" rel="icon" href="logo.1.svg">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="./index.html"><img src="logo.svg" alt="logo"></a>
+        </div>
+        <div class="nav-itens">
+            <ul class="lista">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#faq">Dúvidas Frequentes</a></li>
+            </ul>
+            <a href="./detetive_page.html"><input type="button" value="Detetive" id="botao"> </a>
+            <button class="icon-menu" ><img class="menu" src="menu.svg" alt="Menu"></button>
+        </div>
+    </header>
+
+    <main>
+        <menu id="itens-menu">
+            <div class="menu-description">
+               <div class="interaction">
+               <button class="icon-fechar" onclick="fecharMenu()"><img class="menu-fechar" src="x.svg" alt="fechar menu"></button>
+            </div>
+            <ul class="menu-lista">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#faq">Dúvidas Frequentes</a></li>
+            </ul>
+            <a href="./detetive_page.html"><input type="button" value="Detetive" id="menu-botao"> </a>
+        </div>
+        </menu>
+        
+        <section id="inicio">
+            <div class="principal-information">
+                <h1>
+                    IT'S MURDERS ANALYSIS...
+                </h1>
+                <p>
+                    Descubra agora se alguém próximo a você está <br class="br-mobile">sendo procurado
+                    pela polícia e tenha acesso a <br class="br-mobile">sua ficha criminal.
+                </p>
+                <div class="analysis-form">
+                    <form>
+                        <input id="text" type="text" placeholder="Nome"><br>
+                        <input id="cpf" type="text" placeholder="CPF"><br>
+                        <input id="button" type="button" value="Enviar" onclick="enviar()">
+                    </form>
+                </div>
+            </div>
+            <div class="lupa-image">
+                <img src="fundo.svg" alt="lupa" id="lupa">
+            </div>
+        </section>
+
+        <section id="about">
+
+            <section id="digital-scaner">
+                <div class="container">
+                    <div id="scaner">
+                    </div>
+                    <img src="digital.png" alt="digital verde" id="digital">
+                </div>
+            </section>
+
+            <section id="about-information">
+                <p>A Murders Analysis é uma empresa especializada em casos polícias. Tendo acesso direto a ficha criminal dos maiores
+                    criminosos do mundo. No noso site você pode consultar a ficha criminal do mesmo. Sendo que, temos como público-alvo detetives de todo o mundo.
+                    Onde eles podem editar e adicionar informações sobre criminosos. Deixando assim a população sempre atualizada e conscientizada.
+                </p>
+            </section> 
+        </section>
+
+        <div id="faq">
+            <h2 class="faq-title">
+                Dúvidas Frequentes
+            </h2>
+            <div id="faq-description">
+                <details>
+                    <summary>O que é a Murders Analysis?</summary>
+                    <p class="answers">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud
+                    </p>
+                </details>
+
+                <details>
+                    <summary>O que fazemos?</summary>
+                    <p class="answers">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud</p>
+                </details>
+
+                <details>
+                    <summary>Pra quem é a Muders Analysis?</summary>
+                    <p class="answers">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud</p>
+                </details>
+
+                <details>
+                    <summary>Como vocês tem acesso a esses dados?</summary>
+                    <p class="answers">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud</p>
+                </details>
+            </div>
+        </div>
+
+   
+        <footer>
+        <div id="footer_conteudo">
+            &copy; 2023 <span> Murder analysis</span>. Todos os direitos reservados.
+           </div>
+           </footer>
+    </main>
+    
+
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
