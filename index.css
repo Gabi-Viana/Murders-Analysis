@@ -639,7 +639,7 @@ estlização da página de controle do detetive */
 
 .lista-aparecer{
     width: 100%;
-    height: 80px;
+    height: 1000px;
     display: flex;
     flex-direction: column;
     align-items:self-start; 
